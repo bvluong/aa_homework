@@ -65,4 +65,11 @@ describe Dessert do
       icecream.make_more
     end
   end
+
+  describe "#is_true?" do
+    it "returns true if equal to NS " do
+      expect(icecream.is_true?("NS")).to be true
+    end
+  end
+
 end
