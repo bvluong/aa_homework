@@ -29,6 +29,10 @@ class Dessert
     @quantity -= amount
   end
 
+  def is_true?(x)
+    x == "NS"
+  end
+
   def serve
     "#{@chef.titleize} has made #{@quantity} #{@type.pluralize}!"
   end
