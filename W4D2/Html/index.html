@@ -1,0 +1,110 @@
+<html>
+    <head>
+
+      <title>Bryant Luong Recipe</title>
+
+      <meta charset="utf-8">
+      <meta name="description" value="This is a nice rich mac and cheese. Serve with a salad for a great meatless dinner. Hope you enjoy it.">
+      <link rel="stylesheet" href="css_reset.css" type="text/css"/>
+      <script type="text/javascript" src="external_javascript_example.js"> </script>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-12345678-9', 'auto');
+        ga('send', 'pageview');
+
+      </script>
+
+
+    </head>
+
+
+    <body>
+      <header> <img src="http://appacademy.io/images/app-academy-logo.img" alt="app-academy-logo" />
+      <nav>
+        <li> <a href="#Desriptions">Description</a> </li>
+        <li> <a href="#Directions">Directions</a> </li>
+        <li> <a href="#Ingredients">Ingredients</a> </li>
+      </nav>
+      </header>
+
+
+        <aside>
+          <h2 id="Ingredients"> Ingredients </h2>
+          <ul>
+            <li> Parmesan Cheese </li>
+            <li> 3 cups of milk </li>
+            <li> 1/4 cup of butter </li>
+            <li> Sweet Cream </li>
+            <li> Bread Crumb sticks </li>
+          </ul>
+        </aside>
+
+        <section>
+          <h1> Mac and Cheese </h1>
+        <figure>
+        <img src="http://cdn2.tmbi.com/TOH/Images/Photos/37/1200x1200/Bistro-Mac---Cheese_exps47665_SD143203C10_24_5bC_RMS.jpg" alt="Mac-and-Cheese-Logo" />
+        </figure>
+        <figcaption> Definitely Not KETO!!!!
+
+        </section>
+
+        <h2 id="Descriptions">Description</h2>
+        <p> This is a nice rich mac and cheese. Serve with a salad for a great meatless dinner. Hope you enjoy it.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Macaroni_and_cheese">Mac And Cheese Wiki</a>
+
+
+
+        <h2 id="Directions"> Description </h2>
+        <ol>
+          <li> Cook macaroni for 20 minutes in boiling water </li>
+          <li> In saucepan, melt the butter, sweet cream, and milk </li>
+          <li> Stir in cheeses slowly, and cook over low heat </li>
+          <li> Add the breadcrumbs and brown, spread cheese over macroni </li>
+          <li> Bake in the oven for 30minutes and Serve.</li>
+        </ol>
+
+    </body>
+    <section id="reviews">
+      <h2>Reviews</h2>
+      <form id="review-form" action="/reviews" method="post">
+        <label for="Reviewer">Name</label>
+        <input id="Reviewer" type="text" name = "name">
+
+        <br />
+
+        <label for="Rating">Rating</label>
+        1<input name="Rating" type="radio" value ="1" checked>
+        2<input name="Rating" type="radio" value ="2">
+        3<input name="Rating" type="radio" value ="3">
+        4<input name="Rating" type="radio" value ="4">
+        5<input name="Rating" type="radio" value ="5">
+
+        <br />
+        <label for="expertise">Cooking Expertise</label>
+        <select id="expertise" name ='expertise'>
+        <option value="Cooking Expertise" disabled selected>Select Cooking Expertise </option>
+        <option value="Cook Everday">Cook Everday</option>
+        <option value="Cooking is a Hobby"> Cooking is a Hobby </option>
+        <option value="Professional Chef"> Professional Chef </option>
+
+        </select>
+
+        <br />
+        <label>Additional
+          Comments <br />
+        <textarea name="Review" rows="4" cols="40"></textarea>
+        </label>
+        <input type="submit" value="Submit Review">
+      </form>
+    </section>
+
+    <footer>
+      <p> Original Recipe by <a href ="http://allrecipes.com/recipe/11679/homemade-mac-and-cheese/"> All_Recipes</a>
+      </p>
+    </footer>
+</html>
