@@ -1,3 +1,10 @@
+body {
+  /* If the user cannot load the Arial font, the sans-serif font is used */
+  font-family: Arial, sans-serif;
+  background-color: #FEFFF1;
+}
+
+
 select input[type="radio"] input[type="submit"] {
   cursor:pointer;
   outline:none;
@@ -41,4 +48,59 @@ h2 + .user_review {
 .user_review h4 {
   font-size: 18px;
   font-weight: bold;
+}
+nav {
+  display:inline-block;
+}
+
+nav ul li {
+  display:inline-block;
+}
+
+nav ul li a {
+  padding: 20px;
+  display: block;
+}
+
+body {
+  width: 900px;
+  margin: 0 auto;
+}
+
+body aside {
+  display: inline-block;
+  width: 180px;
+  margin-right: 15px
+}
+
+body section {
+  display: inline-block;
+  width: 700px;
+  vertical-align: top;
+}
+
+.ingredients-list {
+  margin: 15px;
+}
+
+.directions-list {
+  margin: 15px;
+}
+
+input[type="text"], select {
+  display: block;
+  width: 175px;
+}
+
+select {
+  margin: 10px 0;
+  width: 180px;
+}
+
+textarea {
+  width: 350px;
+}
+
+label {
+  display: block;
 }
