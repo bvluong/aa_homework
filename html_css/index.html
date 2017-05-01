@@ -7,6 +7,7 @@
       <meta name="description" value="This is a nice rich mac and cheese. Serve with a salad for a great meatless dinner. Hope you enjoy it.">
       <link rel="stylesheet" href="assets/css_custom_reset.css" type="text/css"/>
       <script type="text/javascript" src="assets/external_javascript_example.js"> </script>
+      <link rel="stylesheet" href="assets/custom_grid.css" type="text/css"/>
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -33,7 +34,7 @@
       </nav>
       </header>
 
-
+       <div class="col col-1-3">
         <aside>
           <h2 id="Ingredients" > Ingredients </h2>
           <ul class="ingredients-list">
@@ -44,7 +45,9 @@
             <li> Bread Crumb sticks </li>
           </ul>
         </aside>
+      </div>
 
+      <div class="col col-2-3">
         <section>
           <h1> Mac and Cheese </h1>
         <figure>
@@ -71,32 +74,33 @@
         </ol>
 
     </body>
-    <section id="reviews">
-      <h2>Reviews</h2>
-      <form id="review-form" action="/reviews" method="post">
-        <label for="Reviewer">Name</label>
-        <input id="Reviewer" type="text" name = "name">
+      <section id="reviews">
+        <h2>Reviews</h2>
+        <form id="review-form" action="/reviews" method="post">
+          <label for="Reviewer">Name</label>
+          <input id="Reviewer" type="text" name = "name">
 
-        1<input name="Rating" type="radio" value ="1" checked>
-        2<input name="Rating" type="radio" value ="2">
-        3<input name="Rating" type="radio" value ="3">
-        4<input name="Rating" type="radio" value ="4">
-        5<input name="Rating" type="radio" value ="5">
+          1<input name="Rating" type="radio" value ="1" checked>
+          2<input name="Rating" type="radio" value ="2">
+          3<input name="Rating" type="radio" value ="3">
+          4<input name="Rating" type="radio" value ="4">
+          5<input name="Rating" type="radio" value ="5">
 
-        <select id="expertise" name ='expertise'>
-          <option value="Cooking Expertise" disabled selected>Select Cooking Expertise </option>
-          <option value="Cook Everday">Cook Everday</option>
-          <option value="Cooking is a Hobby"> Cooking is a Hobby </option>
-          <option value="Professional Chef"> Professional Chef </option>
-        </select>
+          <select id="expertise" name ='expertise'>
+            <option value="Cooking Expertise" disabled selected>Select Cooking Expertise </option>
+            <option value="Cook Everday">Cook Everday</option>
+            <option value="Cooking is a Hobby"> Cooking is a Hobby </option>
+            <option value="Professional Chef"> Professional Chef </option>
+          </select>
 
-        <label>
-          <textarea name="Review" rows="4" cols="40"></textarea>
-        </label>
-        <input type="submit" value="Submit Review">
-      </form>
+          <label>
+            <textarea name="Review" rows="4" cols="40"></textarea>
+          </label>
+          <input type="submit" value="Submit Review">
+        </form>
+      </section>
     </section>
-    </section>
+  </div>
     <footer>
       <p> Original Recipe by <a href ="http://allrecipes.com/recipe/11679/homemade-mac-and-cheese/"> All_Recipes</a>
       </p>
