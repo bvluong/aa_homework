@@ -25,9 +25,19 @@ input[type="submit"]:hover {
   width: 400px;
 }
 
-header img {
+
+ol {
+  list-style: upper-roman inside;
+  padding: 0;
+}
+
+header > img {
   height: 100px;
   float: left;
+}
+
+figure {
+  margin: 0 auto;
 }
 
 input[type="radio"] {
@@ -76,7 +86,7 @@ header:after {
 }
 
 body {
-  width: 900px;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -100,8 +110,8 @@ body section {
   margin-bottom: 15px;
 }
 
-.directions-list {
-  margin: 15px;
+.directions-list > li{
+  margin: 15px 0px;
 }
 
 input[type="text"], select {
@@ -121,3 +131,46 @@ textarea {
 label {
   display: block;
 }
+
+.hamburger-dropdown {
+  display: none;
+}
+
+@media all and (max-width: 900px) {
+  nav ul {
+    display: none;
+  }
+  .hamburger-dropdown {
+    display: block;
+  }
+  .hamburger-dropdown > li {
+    background: url(hamburger.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    /* nearest relatively positioned parent of absolute positioned child */
+    position: relative;
+    cursor: pointer;
+  }
+  .hamburger-dropdown ul {
+    /* Every time we position an element absolutely we should be thinking about
+    which parent element we need to position relatively */
+    position: absolute;
+    top: 50px;
+    left: 0;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: black 5px 5px 10px;
+  }
+
+  /* This is how we create pure css dropdown effects. No JS required. */
+  .hamburger-dropdown:hover ul {
+    display: flex;
+    background: ghostwhite;
+  }
+
+  .hamburger-dropdown ul li:hover a {
+    text-decoration: underline;
+  }
+};
