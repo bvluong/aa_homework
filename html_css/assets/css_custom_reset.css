@@ -21,10 +21,8 @@ input[type="submit"]:hover {
   background-color: light-grey;
 }
 
-/*#reviews + */
-
 #macncheese {
-  width: 300px;
+  width: 400px;
 }
 
 header img {
@@ -80,6 +78,10 @@ header:after {
 body {
   width: 900px;
   margin: 0 auto;
+}
+
+#description {
+  width: 600px
 }
 
 body aside {
