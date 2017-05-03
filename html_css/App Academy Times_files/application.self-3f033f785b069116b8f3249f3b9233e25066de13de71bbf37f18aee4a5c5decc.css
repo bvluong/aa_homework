@@ -1,0 +1,172 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ */
+/* PHASE 0: Reset */
+/* line 3, /Users/admin/Desktop/aa_times/app/assets/stylesheets/base/reset.scss */
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid grey;
+  font: sans-serif;
+  color: black;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: white;
+}
+
+/* line 21, /Users/admin/Desktop/aa_times/app/assets/stylesheets/base/reset.scss */
+ol, ul {
+  list-style: upper-alpha;
+}
+
+/* line 31, /Users/admin/Desktop/aa_times/app/assets/stylesheets/base/reset.scss */
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+  /*
+  Get rid of native styling. Read more here:
+  http://css-tricks.com/almanac/properties/a/appearance/
+  */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Clearfix */
+/* Define application-wide selectors here!*/
+/* line 3, /Users/admin/Desktop/aa_times/app/assets/stylesheets/base/layout.scss */
+html {
+  position: relative;
+  height: 100%;
+}
+
+/*
+	Header Rules
+*/
+/* line 35, /Users/admin/Desktop/aa_times/app/assets/stylesheets/base/layout.scss */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #e2e2e2;
+}
+
+/* line 41, /Users/admin/Desktop/aa_times/app/assets/stylesheets/base/layout.scss */
+.hr-top, .hr-bottom {
+  width: 100%;
+  margin: 0;
+}
+
+/* line 46, /Users/admin/Desktop/aa_times/app/assets/stylesheets/base/layout.scss */
+.hr-top {
+  height: 2px;
+  margin-bottom: 1px;
+}
+
+/* Attribute selector targeting all elements
+with a class attribute containing 'col-' */
+/* line 1, /Users/admin/Desktop/aa_times/app/assets/stylesheets/components/_masthead.scss */
+.masthead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid black;
+  position: relative;
+}
+
+/* line 9, /Users/admin/Desktop/aa_times/app/assets/stylesheets/components/_masthead.scss */
+.language-nav {
+  position: absolute;
+  top: -15px;
+  left: calc(50% - (177.78px/2));
+  background: white;
+  border: 1px solid #e2e2e2;
+  border-bottom: none;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+/* line 20, /Users/admin/Desktop/aa_times/app/assets/stylesheets/components/_masthead.scss */
+.language-nav a {
+  margin: 0 5px;
+  text-transform: uppercase;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 10px;
+  color: #6f6f6f;
+}
+
+/* line 28, /Users/admin/Desktop/aa_times/app/assets/stylesheets/components/_masthead.scss */
+.language-nav ul {
+  display: flex;
+}
+
+/* line 32, /Users/admin/Desktop/aa_times/app/assets/stylesheets/components/_masthead.scss */
+.logo {
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+/* line 37, /Users/admin/Desktop/aa_times/app/assets/stylesheets/components/_masthead.scss */
+.masthead-links {
+  display: flex;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 11px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 45, /Users/admin/Desktop/aa_times/app/assets/stylesheets/components/_masthead.scss */
+.masthead-links li {
+  margin-left: 10px;
+  border-right: 1px solid #e2e2e2;
+}
+
+/* line 50, /Users/admin/Desktop/aa_times/app/assets/stylesheets/components/_masthead.scss */
+.masthead-links button {
+  background: none;
+  padding: 0px;
+  color: #000;
+  font-weight: normal;
+  border: none;
+}
+
+/* line 58, /Users/admin/Desktop/aa_times/app/assets/stylesheets/components/_masthead.scss */
+.masthead-links button:hover {
+  background-color: #f7f7f5;
+}
+
+/* line 62, /Users/admin/Desktop/aa_times/app/assets/stylesheets/components/_masthead.scss */
+.masthead-links a,
+.masthead-links button,
+.masthead-links time {
+  margin-right: 10px;
+}
+
+/* line 68, /Users/admin/Desktop/aa_times/app/assets/stylesheets/components/_masthead.scss */
+.masthead-links i {
+  margin-right: 5px;
+}
+
+/* line 72, /Users/admin/Desktop/aa_times/app/assets/stylesheets/components/_masthead.scss */
+.masthead-links strong {
+  color: green;
+}
